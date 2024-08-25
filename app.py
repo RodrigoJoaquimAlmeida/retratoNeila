@@ -64,6 +64,8 @@ def upload():
 
         user_image = Image.open(filename)
 
+        user_image = correct_image_orientation(user_image)
+
         base_image = Image.open('static/base_image.png')
 
         base_image = base_image.resize(user_image.size)
