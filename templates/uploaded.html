@@ -34,9 +34,19 @@
 			document
 				.getElementById('download-link')
 				.addEventListener('click', function () {
-					setTimeout(function () {
-						window.location.href = '/';
-					}, 2000);
+					if (
+						/Mobi|Android|iPhone|iPad|iPod/i.test(
+							navigator.userAgent
+						)
+					) {
+						setTimeout(function () {
+							window.location.href = '/';
+						}, 5000);
+					} else {
+						setTimeout(function () {
+							window.location.href = '/';
+						}, 2000);
+					}
 				});
 		</script>
 	</body>
