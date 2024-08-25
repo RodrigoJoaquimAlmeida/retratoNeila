@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Retrato apoio - Neila Gonçalves</title>
+		<link rel="stylesheet" href="../static/style.css" />
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<div class="bold">
+					<h1 class="title">
+						Crie um retrato de apoio a Neila Gonçalves
+					</h1>
+				</div>
+			</header>
+			<div class="neilaMain">
+				<img
+					src="../static/img/portrait_base.jpeg"
+					alt="Imagem base Neila Gonçalves"
+				/>
+				<img
+					src="../static/img/exemploNeila.jpeg"
+					alt="Imagem exemplo gerada. Modelo: Rodrigo Joaquim"
+				/>
+			</div>
+			<div class="form-sender">
+				<form
+					id="carregaFoto"
+					method="post"
+					action="/upload"
+					enctype="multipart/form-data"
+					name="carregaNeila"
+				>
+					<label for="carregaArquivo"
+						>Selecione sua foto para usar nas suas Redes
+						Sociais</label
+					>
+					<input
+						class="button-75"
+						type="file"
+						name="file"
+						id="carregaArquivo"
+						accept="image/*"
+						required
+					/>
+					<input class="button-75" type="submit" value="Enviar" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Imagem Processada</title>
+		<link rel="stylesheet" href="../static/style.css" />
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<h1 class="bold">
+					Baixe sua foto-retrato em apoio a Neila Gonçalves
+				</h1>
+			</header>
+			<div class="neilaUpload">
+				<img
+					src="{{ url_for('static', filename='uploads/' + filename) }}"
+					alt="Imagem Processada"
+				/>
+			</div>
+			<br /><br />
+			<div class="button-download">
+				<a
+					id="download-link"
+					href="{{ url_for('download_file', filename=filename) }}"
+					download
+				>
+					<button class="button-75">Baixar Imagem</button>
+				</a>
+			</div>
+		</div>
+		<script>
+			document
+				.getElementById('download-link')
+				.addEventListener('click', function () {
+					setTimeout(function () {
+						window.location.href = '/';
+					}, 2000);
+				});
+		</script>
+	</body>
+</html>

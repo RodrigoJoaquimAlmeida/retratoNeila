@@ -1,0 +1,150 @@
+* {
+	margin: 3px;
+	padding: 3px;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+	max-width: 1400px; /* Defina a largura máxima do conteúdo */
+	margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+	padding: 20px;
+	background-color: #cf5584; /* Cor de fundo do conteúdo */
+	border-radius: 10px; /* Bordas arredondadas (opcional) */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo (opcional) */
+}
+
+header h1 {
+	text-align: center;
+	letter-spacing: 0.15px;
+}
+
+.bold {
+	font-weight: 800;
+}
+
+.neilaMain {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+.neilaMain img {
+	width: 100%;
+	max-width: 350px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.neilaUpload {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+.neilaUpload img {
+	width: 100%;
+	max-width: 350px;
+	height: 300px;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.neilaMain img:nth-of-type(2) {
+	object-fit: contain;
+}
+
+.form-sender {
+	display: flex;
+	justify-content: center;
+}
+
+label {
+	font-size: 25px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-75 {
+	align-items: center;
+	background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+	border: 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Codec cold', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	height: 30px;
+	justify-content: center;
+	letter-spacing: 0.4px;
+	line-height: 1;
+	max-width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-75:active {
+	outline: 0;
+}
+
+.button-75:hover {
+	outline: 0;
+}
+
+.button-75 span {
+	transition: all 200ms;
+}
+
+.button-75:hover span {
+	transform: scale(0.9);
+	opacity: 0.75;
+}
+
+@media screen and (max-width: 1400px) {
+	.button-75 {
+		font-size: 8px;
+		height: 20px;
+	}
+
+	.button-75 span {
+		line-height: 20px;
+	}
+}
+
+.button-download {
+	display: flex;
+	justify-content: center;
+	margin-top: -30px;
+}
+
+input[type='file'] {
+	background-color: lightgray;
+}
